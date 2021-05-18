@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
     //attach event listeners
     newTaskForm.addEventListener("submit", createNewTask);
-  });
+});
   
-  const createNewTask = event => {
+const createNewTask = event => {
     event.preventDefault();
     //stop form from trying to submit
     const newTaskDescription = document.getElementById("new-task-description");
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     appendNewTask(newTask);
     event.target.reset();
-  };
+};
   
-  const appendNewTask = task => {
+const appendNewTask = task => {
     document.getElementById("tasks").appendChild(task);
-  };
+};
